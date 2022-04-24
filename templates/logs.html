@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <h2>{{destaque}}</h2>
+    <br>
+    <table>
+    {% for log in logs %}
+    <tr>
+        {% for item in log %}
+        <td>{{item}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<a href="{{url_for('home')}}"><input type="button" value="Voltar"></a>
+{% endblock %}

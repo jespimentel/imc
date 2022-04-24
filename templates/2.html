@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h2>{{destaque}}</h2>
+<br>
+<p>Prezado(a) {{o_nome}}:</p>
+<table>
+<tr><td>Peso:</td><td>{{o_peso}} kg</td></tr>
+<tr><td>Altura:</td><td>{{a_altura}} cm</td></tr>
+</table>
+<br>
+<h3>O seu IMC é {{o_imc}}</h3>
+<h3>{{a_classificacao}}</h3>
+<a href="{{url_for('home')}}"><input type="button" value="Voltar"></a>
+<br>
+<br>
+<a href="{{url_for('logs')}}"><input type="button" value="Ver logs"></a>
+{% endblock %}

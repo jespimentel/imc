@@ -1,0 +1,10 @@
+body {background-color: olive;}
+
+h2, h3  {color: yellow;}
+
+p, a   {color: white;}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+    }

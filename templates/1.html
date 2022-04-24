@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h2>{{destaque}}</h2>
+<h2>Cálculo do IMC</h2>
+<br>
+<form method="POST" action="/imc">
+    <table>
+        <tr><td>Nome/apelido:</td><td><input name='nome' type='text' required="required"></td></tr>
+        <tr><td>Peso (em Kg):</td><td><input name='peso' type='number' step=0.1 required="required"></td></tr>
+        <tr><td>Altura (em cm):</td><td><input name='altura' type='number' required="required"></td></tr>
+    </table>
+    <p><input value="Calcular" type="submit"></p>
+</form>
+{% endblock %}
